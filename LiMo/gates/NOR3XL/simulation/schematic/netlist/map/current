@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NOR3XL"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/paras22167/simulation/NOR3XL/spectre/schematic/netlist"
+ )
+( model
+( "cad045/NOR3XL/schematic" "NOR3XL" )
+ )
+( "NOR3XL" "ihnl/cds0/map" )
+ )

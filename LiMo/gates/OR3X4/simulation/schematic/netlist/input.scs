@@ -1,0 +1,52 @@
+// Generated for: spectre
+// Generated on: Oct 31 19:08:07 2023
+// Design library name: cad045
+// Design cell name: OR3X4
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "/cadence/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs" section=mc
+
+// Library name: cad045
+// Cell name: OR3X4
+// View name: schematic
+PM3 (Y net30 VDD VDD) g45p1svt w=(1.56u) l=45n nf=1 as=218.4f ad=218.4f \
+        ps=3.4u pd=3.4u nrd=89.7436m nrs=89.7436m sa=140n sb=140n sd=160n \
+        sca=61.39246 scb=0.05939 scc=0.00742 m=(1)
+PM2 (net29 C VDD VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f \
+        ps=1.06u pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n \
+        sd=160n sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+PM1 (net30 A net31 VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f \
+        ps=1.06u pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n \
+        sd=160n sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+PM0 (net31 B net29 VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f \
+        ps=1.06u pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n \
+        sd=160n sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+NM3 (Y net30 VSS VSS) g45n1svt w=(1.04u) l=45n nf=1 as=145.6f ad=145.6f \
+        ps=2.36u pd=2.36u nrd=134.615m nrs=134.615m sa=140n sb=140n \
+        sd=160n sca=71.11936 scb=0.06501 scc=0.00848 m=(1)
+NM2 (net30 C VSS VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+NM1 (net30 B VSS VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+NM0 (net30 A VSS VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+C0 (Y VSS) capacitor c=30f
+include "./_graphical_stimuli.scs"
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 \
+    maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=100n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

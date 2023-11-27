@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Mar 19 20:54:27 2023
+// Design library name: combCell45nm
+// Design cell name: NOR3X1
+// Design view name: schematic
+simulator lang=spectre
+global 0

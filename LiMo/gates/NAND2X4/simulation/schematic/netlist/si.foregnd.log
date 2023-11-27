@@ -1,0 +1,20 @@
+Begin Incremental Netlisting Oct 25 14:05:40 2023
+ERROR (OSSHNL-108): The property, 'connectivityLastUpdated', specified on
+library 'cad45nm', cell 'NAND2X3',
+view 'schematic', does not have an integer
+value. Re-extract the design (File->Check
+and Save menu option) to correct this
+error.
+
+End netlisting Oct 25 14:05:40 2023
+Begin Incremental Netlisting Oct 25 14:05:52 2023
+ERROR (OSSHNL-108): The property, 'connectivityLastUpdated', specified on
+library 'cad45nm', cell 'NAND2X3',
+view 'schematic', does not have an integer
+value. Re-extract the design (File->Check
+and Save menu option) to correct this
+error.
+
+End netlisting Oct 25 14:05:52 2023
+Begin Incremental Netlisting Oct 25 14:06:54 2023
+End netlisting Oct 25 14:06:54 2023

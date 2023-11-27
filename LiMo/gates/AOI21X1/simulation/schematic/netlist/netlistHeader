@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 16 16:52:32 2023
+// Design library name: cad045
+// Design cell name: AOI21
+// Design view name: schematic
+simulator lang=spectre
+global 0

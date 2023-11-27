@@ -1,0 +1,48 @@
+// Generated for: spectre
+// Generated on: Oct 25 20:32:42 2023
+// Design library name: cad45nm
+// Design cell name: AND2X8
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters skew_b=3e-10 VDD=1.0 corners=tt slew_b=2.7e-10 slew_a=2.7e-10 \
+    cap=2.7e-13
+include "/cadence/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs" section=tt
+
+// Library name: cad45nm
+// Cell name: AND2X8
+// View name: schematic
+PM1 (net23 B VDD VDD) g45p1svt w=(780n) l=45n nf=1 as=109.2f ad=109.2f \
+        ps=1.84u pd=1.84u nrd=179.487m nrs=179.487m sa=140n sb=140n \
+        sd=160n sca=80.49887 scb=0.07059 scc=0.00954 m=(1)
+PM0 (net23 A VDD VDD) g45p1svt w=(780n) l=45n nf=1 as=109.2f ad=109.2f \
+        ps=1.84u pd=1.84u nrd=179.487m nrs=179.487m sa=140n sb=140n \
+        sd=160n sca=80.49887 scb=0.07059 scc=0.00954 m=(1)
+PM2 (Y net23 VDD VDD) g45p1svt w=(3.11u) l=45n nf=1 as=435.4f ad=435.4f \
+        ps=6.5u pd=6.5u nrd=45.0161m nrs=45.0161m sa=140n sb=140n sd=160n \
+        sca=51.33157 scb=0.05378 scc=0.00636 m=(1)
+C0 (Y VSS) capacitor c=cap
+NM0 (net23 A net24 VSS) g45n1svt w=(520n) l=45n nf=1 as=72.8f ad=72.8f \
+        ps=1.32u pd=1.32u nrd=269.231m nrs=269.231m sa=140n sb=140n \
+        sd=160n sca=98.28759 scb=0.08111 scc=0.01166 m=(1)
+NM2 (Y net23 VSS VSS) g45n1svt w=(2.065u) l=45n nf=1 as=289.1f ad=289.1f \
+        ps=4.41u pd=4.41u nrd=67.7966m nrs=67.7966m sa=140n sb=140n \
+        sd=160n sca=56.50260 scb=0.05663 scc=0.00690 m=(1)
+NM1 (net24 B VSS VSS) g45n1svt w=(520n) l=45n nf=1 as=72.8f ad=72.8f \
+        ps=1.32u pd=1.32u nrd=269.231m nrs=269.231m sa=140n sb=140n \
+        sd=160n sca=98.28759 scb=0.08111 scc=0.01166 m=(1)
+include "/home/ananya22131/Pooja_mam_project2/AND2X8/simulation/AND2X8/spectre/schematic/netlist/_graphical_stimuli_1.scs"
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=25.0 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=11e-9 start=0 step=0.1e-9 write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub currents=all

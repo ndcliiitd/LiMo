@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 25 20:09:21 2023
+// Design library name: cad45nm
+// Design cell name: OR2XL
+// Design view name: schematic
+simulator lang=spectre
+global 0

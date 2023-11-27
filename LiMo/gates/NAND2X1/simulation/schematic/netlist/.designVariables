@@ -1,0 +1,2 @@
+parameters skew_b=9.5e-10 VDD=1.0 corners=tt slew_b=1e-11 slew_a=1e-11 \
+    cap=1e-14

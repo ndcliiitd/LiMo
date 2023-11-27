@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+cad45nm/AND2X1/schematic AND2X1
+$endmodel
+$net
+$endnet
+$param
+$endparam

@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+combCell45nm/NOR2X1/schematic NOR2X1
+$endmodel
+$net
+$endnet
+$param
+$endparam

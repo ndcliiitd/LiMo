@@ -1,0 +1,42 @@
+// Generated for: spectre
+// Generated on: Oct 25 19:50:10 2023
+// Design library name: cad45nm
+// Design cell name: NOR2X4
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters skew_b=7e-10 VDD=1.0 corners=tt slew_b=2.7e-10 slew_a=2.7e-10 \
+    cap=2.7e-13
+include "/cadence/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs" section=tt
+
+// Library name: cad45nm
+// Cell name: NOR2X4
+// View name: schematic
+C0 (Y VSS) capacitor c=cap
+mn1 (Y B VSS VSS) g45n1svt w=(1.04u) l=45n nf=1 as=145.6f ad=145.6f \
+        ps=2.36u pd=2.36u nrd=134.615m nrs=134.615m sa=140n sb=140n \
+        sd=160n sca=71.11936 scb=0.06501 scc=0.00848 m=(1)
+mn0 (Y A VSS VSS) g45n1svt w=(1.04u) l=45n nf=1 as=145.6f ad=145.6f \
+        ps=2.36u pd=2.36u nrd=134.615m nrs=134.615m sa=140n sb=140n \
+        sd=160n sca=71.11936 scb=0.06501 scc=0.00848 m=(1)
+mp0 (net33 A VDD VDD) g45p1svt w=(1.56u) l=45n nf=1 as=218.4f ad=218.4f \
+        ps=3.4u pd=3.4u nrd=89.7436m nrs=89.7436m sa=140n sb=140n sd=160n \
+        sca=61.39246 scb=0.05939 scc=0.00742 m=(1)
+mp1 (Y B net33 VDD) g45p1svt w=(1.56u) l=45n nf=1 as=218.4f ad=218.4f \
+        ps=3.4u pd=3.4u nrd=89.7436m nrs=89.7436m sa=140n sb=140n sd=160n \
+        sca=61.39246 scb=0.05939 scc=0.00742 m=(1)
+include "/home/ananya22131/Pooja_mam_project2/NOR2X4/simulation/NOR2X4/spectre/schematic/netlist/_graphical_stimuli_1.scs"
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=25.0 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=11e-9 start=0 step=0.1e-9 write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub currents=all

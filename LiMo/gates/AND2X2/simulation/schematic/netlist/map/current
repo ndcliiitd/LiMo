@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "AND2X2"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/ananya22131/simulation/AND2X2/spectre/schematic/netlist"
+ )
+( model
+( "cad45nm/AND2X2/schematic" "AND2X2" )
+ )
+( "AND2X2" "ihnl/cds0/map" )
+ )

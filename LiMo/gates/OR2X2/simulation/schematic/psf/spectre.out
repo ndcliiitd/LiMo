@@ -1,0 +1,293 @@
+
+Spectre (R) Circuit Simulator
+Version 19.1.0.396.isr8 64bit -- 19 Jun 2020
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ananya22131   Host: edatools-server2   HostID: 7F0100   PID: 14452
+Memory  available: 671.6457 MB  physical: 134.6428 GB
+Linux   : Red Hat Enterprise Linux Server release 7.9 (Maipo)
+CPU Type: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3599.9] ( 32 ),  1 [3600.0] ( 33 ),  2 [3543.8] ( 34 )
+                 3 [3599.9] ( 35 ),  4 [3600.0] ( 36 ),  5 [3600.0] ( 37 )
+                 6 [3599.9] ( 38 ),  7 [3600.0] ( 39 ),  8 [3599.9] ( 40 )
+                 9 [3544.1] ( 41 ), 10 [3456.0] ( 42 ), 11 [3589.6] ( 43 )
+                12 [3456.3] ( 44 ), 13 [3075.2] ( 45 ), 14 [3357.4] ( 46 )
+                15 [3543.4] ( 47 )
+        1:      16 [3599.9] ( 48 ), 17 [3599.9] ( 49 ), 18 [3580.0] ( 50 )
+                19 [3070.6] ( 51 ), 20 [3593.1] ( 52 ), 21 [3582.9] ( 53 )
+                22 [3588.7] ( 54 ), 23 [3599.9] ( 55 ), 24 [3574.2] ( 56 )
+                25 [3599.9] ( 57 ), 26 [3519.5] ( 58 ), 27 [3295.4] ( 59 )
+                28 [3599.9] ( 60 ), 29 [3600.0] ( 61 ), 30 [3600.0] ( 62 )
+                31 [3578.6] ( 63 )
+        
+System load averages (1min, 5min, 15min) : 4.3 %, 4.0 %, 3.6 %
+Hyperthreading is enabled
+HPC is enabled
+
+
+Simulating `input.scs' on edatools-server2 at 7:06:09 PM, Thur Oct 26, 2023 (process id: 14452).
+Current working directory: /home/ananya22131/Pooja_mam_project2/OR2X2/simulation/OR2X2/spectre/schematic/netlist
+Command line:
+    /cadence/SPECTRE191/tools/bin/spectre -64 input.scs +escchars +log  \
+        ../psf/spectre.out +inter=mpsc +mpssession=spectre0_156722_12  \
+        -format psfxl -raw ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5  \
+        -env ade
+spectre pid = 14452
+
+Loading /cadence/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /cadence/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /cadence/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /cadence/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /cadence/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ananya22131/Pooja_mam_project2/OR2X2/simulation/OR2X2/spectre/schematic/netlist/input.scs
+Reading file:  /cadence/SPECTRE191/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_mos.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_diode.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_bipolar.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_mimcap.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_moscap.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_resistor.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_inductor.scs
+Reading file:  /cadence/FOUNDRY/analog/45nm/models/spectre/gpdk045_soa.scs
+Reading file:  /home/ananya22131/Pooja_mam_project2/OR2X2/simulation/OR2X2/spectre/schematic/netlist/_graphical_stimuli_1.scs
+Time for NDB Parsing: CPU = 366.157 ms, elapsed = 1.26483 s.
+Time accumulated: CPU = 464.362 ms, elapsed = 1.26483 s.
+Peak resident memory used = 72.3 Mbytes.
+
+Reading link:  /cadence/SPECTRE191/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /cadence/SPECTRE191/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /cadence/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /cadence/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_2b273e is up to date.
+Installed compiled interface for bsource_2b273e.
+Time for Elaboration: CPU = 23.099 ms, elapsed = 23.3059 ms.
+Time accumulated: CPU = 487.56 ms, elapsed = 1.28823 s.
+Peak resident memory used = 81.9 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+
+
+Time for EDB Visiting: CPU = 1.168 ms, elapsed = 1.16801 ms.
+Time accumulated: CPU = 488.825 ms, elapsed = 1.2895 s.
+Peak resident memory used = 82.9 Mbytes.
+
+
+Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Global user options:
+         psfversion = 1.4.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 25
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+           currents = all
+             reltol = 0.001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 13
+              bsim4 6     
+     bsource_2b273e 6     
+          capacitor 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+               info 7     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Notice from spectre during initial setup.
+    1 vsources are short because their absolute value is less than or equal to 'vabsshort'.
+    APS Enabled.
+
+Time for parsing: CPU = 2.565 ms, elapsed = 3.40581 ms.
+Time accumulated: CPU = 491.47 ms, elapsed = 1.29298 s.
+Peak resident memory used = 84.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering remote command mode using MPSC service (spectre, ipi, v0.0, spectre0_156722_12, ).
+
+************************************************
+Transient Analysis `tran': time = (0 s -> 11 ns)
+************************************************
+Trying `homotopy = gmin' for initial conditions.
+DC simulation time: CPU = 3.47 ms, elapsed = 3.46994 ms.
+
+Opening the PSFXL file ../psf/tran.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 11 ns
+    step = 100 ps
+    maxstep = 220 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 25 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+    rabsshort = 1 mOhm
+
+
+Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small.
+
+
+Output and IC/nodeset summary:
+                 save   40      (current)
+                 save   12      (voltage)
+
+    tran: time = 300 ps      (2.73 %), step = 200 ps       (1.82 %)
+    tran: time = 870 ps      (7.91 %), step = 130 ps       (1.18 %)
+    tran: time = 1.405 ns    (12.8 %), step = 36.79 ps     (334 m%)
+    tran: time = 2.024 ns    (18.4 %), step = 220 ps          (2 %)
+    tran: time = 2.684 ns    (24.4 %), step = 220 ps          (2 %)
+    tran: time = 3.124 ns    (28.4 %), step = 220 ps          (2 %)
+    tran: time = 3.784 ns    (34.4 %), step = 220 ps          (2 %)
+    tran: time = 4.224 ns    (38.4 %), step = 220 ps          (2 %)
+    tran: time = 4.884 ns    (44.4 %), step = 220 ps          (2 %)
+    tran: time = 5.324 ns    (48.4 %), step = 220 ps          (2 %)
+
+Notice from spectre at time = 5.98356 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node n0.
+
+    tran: time = 5.984 ns    (54.4 %), step = 220 ps          (2 %)
+
+Notice from spectre at time = 6.12678 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node n0.
+Notice from spectre at time = 6.27 ns during transient analysis `tran'.
+    Found trapezoidal ringing on node n0.
+
+    tran: time = 6.337 ns    (57.6 %), step = 33.75 ps     (307 m%)
+    tran: time = 6.887 ns    (62.6 %), step = 14.93 ps     (136 m%)
+    tran: time = 7.616 ns    (69.2 %), step = 220 ps          (2 %)
+    tran: time = 8.056 ns    (73.2 %), step = 220 ps          (2 %)
+    tran: time = 8.716 ns    (79.2 %), step = 220 ps          (2 %)
+    tran: time = 9.156 ns    (83.2 %), step = 220 ps          (2 %)
+    tran: time = 9.816 ns    (89.2 %), step = 220 ps          (2 %)
+    tran: time = 10.26 ns    (93.2 %), step = 220 ps          (2 %)
+    tran: time = 10.85 ns    (98.6 %), step = 152.1 ps     (1.38 %)
+Number of accepted tran steps =             158
+
+Notice from spectre during transient analysis `tran'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(n0) = 1.004 V
+I: I(_vVDD:p) = 196.6 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (1.7 %)       1 (3.9 %)       2 (3.4 %)       3 (8.0 %)
+         4 (4.5 %)       5 (5.6 %)       6 (2.3 %)       7 (5.1 %)
+         8 (4.5 %)       9 (22.6 %)     10 (3.4 %)      11 (1.7 %)
+        12 (2.2 %)      13 (1.7 %)      14 (1.1 %)      15 (4.0 %)
+        16 (3.4 %)      17 (12.9 %)     18 (15.8 %)     19 (9.6 %)
+        20 (4.5 %)      21 (5.6 %)      22 (5.1 %)      23 (3.4 %)
+        24 (5.1 %)      25 (10.7 %)     26 (7.9 %)      27 (5.6 %)
+        28 (6.1 %)      29 (4.5 %)      30 (6.7 %)      31 (4.0 %)
+        33 (18.8 %)     34 (25.1 %)     35 (4.0 %)      36 (2.8 %)
+        37 (7.9 %)      38 (4.0 %)      39 (3.4 %)      40 (1.1 %)
+        41 (1.7 %)      43 (1.7 %)      44 (1.1 %)      45 (2.2 %)
+        48 (1.1 %)      49 (40.2 %)     50 (13.1 %)     51 (4.5 %)
+        52 (3.4 %)      53 (3.4 %)      54 (2.2 %)      55 (5.1 %)
+        56 (1.1 %)      57 (1.7 %)      58 (1.1 %)      59 (3.9 %)
+        60 (1.1 %)      61 (2.8 %)      63 (1.1 %)      
+        Total: 349.3%
+Initial condition solution time: CPU = 3.518 ms, elapsed = 3.51787 ms.
+Intrinsic tran analysis time:    CPU = 19.685 ms, elapsed = 14.514 ms.
+Total time required for tran analysis `tran': CPU = 25.265 ms, elapsed = 20.0932 ms.
+Time accumulated: CPU = 523.472 ms, elapsed = 2.01134 s.
+Peak resident memory used = 88.6 Mbytes.
+
+finalTimeOP: writing operating point information to rawfile.
+
+Opening the PSF file ../psf/finalTimeOP.info ...
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Spectre received SIGTERM sent from PID: 14347 with UID: 1140.
+Process hierarchy of PID 14347 :
+    PID        COMMAND
+    14347      /cadence/IC618/tools/bin/64bit/cdsServIpc -c 59785 -n 25 -r 0 -x cd /home/ananya22131/Pooja_mam_project2/OR2X2/simulation/OR2X2/spectre/schematic/netlist ; ./runSimulation 
+    156722     /cadence/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -ocean 
+    156707     csh -c source /cadence/cshrc; ocean 
+    44866      python data_gen_skew_opt.py 
+    83506      bash 
+    142933     /usr/libexec/gnome-terminal-server 
+
+Error found by spectre.
+    ERROR (SPECTRE-25): The simulation is stopped either by the user or the farm.
+
+
+Aggregate audit (7:06:22 PM, Thur Oct 26, 2023):
+Time used: CPU = 539 ms, elapsed = 12.3 s, util. = 4.38%.
+Time spent in licensing: elapsed = 686 ms, percentage of total = 5.58%.
+Peak memory used = 89.7 Mbytes.
+Simulation started at: 7:06:09 PM, Thur Oct 26, 2023, ended at: 7:06:22 PM, Thur Oct 26, 2023, with elapsed time (wall clock): 12.3 s.
+spectre completes with 1 error, 1 warning, and 9 notices.
+spectre terminated prematurely due to fatal error.

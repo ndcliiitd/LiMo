@@ -1,0 +1,5 @@
+HEADER
+"PSFversion" "1.00"
+"NM0n NM2n NM1n" "gpdk045_nmos1v_spectre"
+"C0n" "analogLib_cap_spectre"
+"PM1n PM0n PM2n" "gpdk045_pmos1v_spectre"

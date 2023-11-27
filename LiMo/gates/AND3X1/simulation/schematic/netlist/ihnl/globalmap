@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+gpdk045_sc/AND3X1/schematic AND3X1
+cad045/AND3X1/schematic AND3X1_schematic
+$endmodel
+$net
+VSS! VSS!
+VDD! VDD!
+$endnet
+$param
+$endparam

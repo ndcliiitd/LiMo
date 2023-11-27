@@ -1,0 +1,17 @@
+
+// Library name: combCell45nm
+// Cell name: NAND2X1
+// View name: schematic
+PM1 (Y B VDD VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f ps=1.06u \
+        pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n sd=160n \
+        sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+PM0 (Y A VDD VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f ps=1.06u \
+        pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n sd=160n \
+        sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+NM1 (net7 A VSS VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+NM0 (Y B net7 VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f ps=800n \
+        pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+C0 (Y VSS) capacitor c=1f

@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+cad045/AOI21/schematic AOI21
+$endmodel
+$net
+$endnet
+$param
+$endparam

@@ -1,0 +1,1 @@
+{"hierarchy":{"top_level":1,"1":{"insts":{"C0":2,"mp3":4,"mn0":3,"mn3":3,"mn2":3,"mn1":3,"mp0":4,"mp2":4,"mp1":4}}},"modelMap":{"capacitor":[2],"g45n1svt":[3],"g45p1svt":[4]},"cellviews":[["cad045","AND3X8","schematic"],["analogLib","cap","spectre"],["gpdk045","nmos1v","spectre"],["gpdk045","pmos1v","spectre"]]}

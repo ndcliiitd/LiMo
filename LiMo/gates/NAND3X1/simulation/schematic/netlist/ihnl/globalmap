@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+combCell45nm/NAND3X1/schematic NAND3X1
+$endmodel
+$net
+$endnet
+$param
+$endparam

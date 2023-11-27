@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NOR2X1"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/poojabe/lib_char/comb_logic_2/NOR2X1/simulation/NOR2X1/spectre/schematic/netlist"
+ )
+( model
+( "combCell45nm/NOR2X1/schematic" "NOR2X1" )
+ )
+( "NOR2X1" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,42 @@
+// Generated for: spectre
+// Generated on: Mar  3 11:50:12 2023
+// Design library name: combCell45nm
+// Design cell name: NAND2X1
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters skew_b=9.5e-10 VDD=1.0 corners=tt slew_b=1e-11 slew_a=1e-11 \
+    cap=1e-14
+include "/cadence/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs" section=tt
+
+// Library name: combCell45nm
+// Cell name: NAND2X1
+// View name: schematic
+PM1 (Y B VDD VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f ps=1.06u \
+        pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n sd=160n \
+        sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+PM0 (Y A VDD VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f ps=1.06u \
+        pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n sd=160n \
+        sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+NM1 (net7 A VSS VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f \
+        ps=800n pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+NM0 (Y B net7 VSS) g45n1svt w=(260n) l=45n nf=1 as=36.4f ad=36.4f ps=800n \
+        pd=800n nrd=538.462m nrs=538.462m sa=140n sb=140n sd=160n \
+        sca=144.98299 scb=0.10251 scc=0.01780 m=(1)
+C0 (Y VSS) capacitor c=cap
+include "/home/poojabe/Desktop/PhD_Research/src_project/ml_lib_char/Limo/gates/NAND2X1/simulation/schematic/netlist/_graphical_stimuli_1.scs"
+simulatorOptions options psfversion="1.4.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=25.0 tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 \
+    rforce=1 maxnotes=5 maxwarns=5 digits=5 cols=80 pivrel=1e-3 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=21e-9 start=0 step=0.1e-9 write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub currents=all

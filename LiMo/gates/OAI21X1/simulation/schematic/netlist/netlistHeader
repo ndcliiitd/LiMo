@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 19 16:51:18 2023
+// Design library name: cad45nm
+// Design cell name: OAI21X1
+// Design view name: schematic
+simulator lang=spectre
+global 0

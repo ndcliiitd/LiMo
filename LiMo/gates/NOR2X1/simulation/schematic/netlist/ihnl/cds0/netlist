@@ -1,0 +1,17 @@
+
+// Library name: combCell45nm
+// Cell name: NOR2X1
+// View name: schematic
+PM1 (Y B net17 VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f \
+        ps=1.06u pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n \
+        sd=160n sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+PM0 (net17 A VDD VDD) g45p1svt w=(390n) l=45n nf=1 as=54.6f ad=54.6f \
+        ps=1.06u pd=1.06u nrd=358.974m nrs=358.974m sa=140n sb=140n \
+        sd=160n sca=114.89040 scb=0.09003 scc=0.01377 m=(1)
+NM1 (Y A VSS VSS) g45n1svt w=(200n) l=45n nf=1 as=28f ad=28f ps=680n \
+        pd=680n nrd=700m nrs=700m sa=140n sb=140n sd=160n sca=169.02145 \
+        scb=0.10920 scc=0.02100 m=(1)
+NM0 (Y B VSS VSS) g45n1svt w=(200n) l=45n nf=1 as=28f ad=28f ps=680n \
+        pd=680n nrd=700m nrs=700m sa=140n sb=140n sd=160n sca=169.02145 \
+        scb=0.10920 scc=0.02100 m=(1)
+C0 (Y VSS) capacitor c=10f

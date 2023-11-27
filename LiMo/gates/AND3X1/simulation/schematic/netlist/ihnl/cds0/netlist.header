@@ -1,0 +1,5 @@
+
+// Library name: gpdk045_sc
+// Cell name: AND3X1
+// View name: schematic
+subckt AND3X1 A B C Y inh_VDD inh_VSS

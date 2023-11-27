@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+cad45nm/OR2X8/schematic OR2X8
+$endmodel
+$net
+$endnet
+$param
+$endparam

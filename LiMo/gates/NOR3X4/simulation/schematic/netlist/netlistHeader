@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Oct 31 16:34:24 2023
+// Design library name: cad045
+// Design cell name: NOR3X4
+// Design view name: schematic
+simulator lang=spectre
+global 0
