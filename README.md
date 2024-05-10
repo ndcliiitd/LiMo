@@ -1,4 +1,4 @@
-# LiMo
+# LiMo – An Intelligent Library Model
 Developing a robust timing verification and signoff framework using machine learning 
 
 Pooja Beniwal, PhD Scholar, IIIT-Delhi, Email: poojabe@iiitd.ac.in, Linkedin Profile:https://www.linkedin.com/in/poojabeniwal/ 
