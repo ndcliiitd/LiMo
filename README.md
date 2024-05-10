@@ -1,7 +1,7 @@
 # LiMo
 Developing a robust timing verification and signoff framework using machine learning 
 
-Pooja Beniwal, PhD Scholar, IIITD, Email: poojabe@iitd.ac.in, Linkedin Profile:https://www.linkedin.com/in/poojabeniwal/ 
+Pooja Beniwal, PhD Scholar, IIITD, Email: poojabe@iiitd.ac.in, Linkedin Profile:https://www.linkedin.com/in/poojabeniwal/ 
 
 Guide: Dr. Sneh Saurabh, Associate Professor, IITD, Email: sneh@iiitd.ac.in
 
