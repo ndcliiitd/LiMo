@@ -1,9 +1,9 @@
 # LiMo
 Developing a robust timing verification and signoff framework using machine learning 
 
-Pooja Beniwal, PhD Scholar, IIITD, Email: poojabe@iiitd.ac.in, Linkedin Profile:https://www.linkedin.com/in/poojabeniwal/ 
+Pooja Beniwal, PhD Scholar, IIIT-Delhi, Email: poojabe@iiitd.ac.in, Linkedin Profile:https://www.linkedin.com/in/poojabeniwal/ 
 
-Guide: Dr. Sneh Saurabh, Associate Professor, IIITD, Email: sneh@iiitd.ac.in
+Guide: Dr. Sneh Saurabh, Associate Professor, IIIT-Delhi, Email: sneh@iiitd.ac.in
 
 LiMo is a user-friendly intelligent library model framework designed to overcome the limitations of traditional lookup table library-based methods, especially in handling complex relationships such as multiple-input switching (MIS). This framework automates the creation of Machine Learning (ML)-based timing models, considering factors like input transition, output capacitance, and temporal distance, making it effective for MIS scenarios. It also accounts for Process-Voltage-Temperature (PVT) variation, providing a comprehensive solution for accurate timing models. The main purpose of LiMo is to simplify the generation of datasets essential for training models. By automating this process, LiMo eliminates the need for manual data creation, saving users time and effort. The interface offers various commands, each designed to automate specific aspects of the modeling process. For instance, 'genDataset' initiates dataset generation using multiprocessing and optimization methods tailored for specific gates. Commands like 
 'viewDataset' and 'loadData' make it easy to view and load generated datasets, while 'plotData' and 'infoData' provide visualizations and information for better comprehension.The 'splitData' command allows users to segment datasets for training and testing, contributing to robust model development. Additionally, LiMo's 'trainModel' and 'testModel' commands offer a seamless process for training and testing machine learning models and assessing their performance, providing insightful reports. Overall, LiMo streamlines the entire process of creating, visualizing, training and testing ML-based timing models, making it a valuable tool in timing verification.
